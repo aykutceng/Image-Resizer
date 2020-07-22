@@ -49,15 +49,15 @@ def inp():
         global hi
         global wi
         
-        hi = int(input("Lütfen ayarlanacak yüksekliği giriniz!"))
-        wi = int(input("Lütfen ayarlanacak genişliği giriniz!"))
+        hi = int(input("Please enter height!"))
+        wi = int(input("Please enter width!"))
         if hi < 1 or wi < 1:
-            print("Lütfen tam sayı giriniz! Sıfır (0) girmeyiniz!")
+            print("Please enter integer only! Zero (0) is not allowed!")
             return inp()
         
 
     except:
-        print("Lütfen geçerli bir parametre giriniz!!!")
+        print("Please enter a valid parameter!!!")
         return inp()
 
 
@@ -75,7 +75,7 @@ def scan(path):
 
 
 Tk().withdraw()
-path = askdirectory(title = "İsimleri düzenlenecek resimlerin bulunduğu ana klasörü seçiniz!")
+path = askdirectory(title = "Choose parent folder which contains sub folders and images!")
 #print(path)
 
 inp()
